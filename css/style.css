@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  height: 1000px;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  margin-bottom: 160px;
+}
+
+.header__wrapper {
+  width: 100%;
+  padding: 22px 0;
+  background-color: #fff;
+  position: fixed;
+}
+.header__wrapper .brand {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__wrapper .brand .fa-bars {
+  display: none;
+}
+.header__wrapper .brand .logo_none {
+  display: none;
+}
+.header__wrapper .brand ul {
+  gap: 32px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+.header__wrapper .brand ul img.logo {
+  margin-right: 60px;
+  display: block;
+  cursor: pointer;
+}
+.header__wrapper .brand ul li a {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+  text-decoration: none;
+}
+
+.btn {
+  padding: 14px 39px;
+  background: #fcb72b;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: rgb(190, 190, 19);
+}
+
+.hero_section {
+  background-image: url(/images/hero_image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  height: 720px;
+  color: #fff;
+}
+.hero_section .hero {
+  padding: 200px 0 150px;
+}
+.hero_section .hero_heading {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  max-width: 500px;
+  letter-spacing: -2.5px;
+  color: #ffffff;
+}
+.hero_section .hero_content {
+  position: relative;
+}
+.hero_section .hero_title {
+  max-width: 520px;
+  padding: 40px 57px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #ffffff;
+}
+.hero_section .arrow {
+  position: absolute;
+  top: 50%;
+  right: 150px;
+}
+.hero_section .line {
+  left: -190px;
+  top: 50%;
+  position: absolute;
+}
+.hero_section .btn {
+  margin: 40px 57px;
+}
+
+.share_flex {
+  display: flex;
+  gap: 30px;
+}
+.share_flex .share_card h3 {
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  padding: 40px 0 27px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.share_flex .share_card p {
+  max-width: 350px;
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: #939caa;
+  color: #939caa;
+}
+
+.learn_more {
+  margin-top: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+  .hero_section {
+    background-image: url(/images/hero_image-tablet.jpg);
+  }
+  .hero_section .hero {
+    text-align: center;
+    padding: 150px 120px;
+  }
+  .hero_section .hero .hero_heading {
+    max-width: none;
+  }
+  .hero_section .hero_title {
+    padding: 24px 0 32px;
+    max-width: none;
+  }
+  .hero_content .line {
+    display: none;
+  }
+  .hero_content .arrow {
+    left: -200px;
+    top: 180px;
+  }
+}
+@media (max-width: 767px) {
+  .hero_section {
+    background-image: url(/images/hero_image-mobile.png);
+  }
+  .header__wrapper .brand .fa-bars,
+  .header__wrapper .brand .logo_none {
+    display: block;
+  }
+  .header__wrapper .brand ul {
+    display: none;
+  }
+  .header__wrapper .btn {
+    visibility: hidden;
+  }
+  .hero_section .hero_heading,
+  .hero_section .hero_title {
+    max-width: none;
+    text-align: center;
+    margin: 10px 55px;
+  }
+  .hero_section .btn {
+    margin: 40px 240px;
+  }
+  .hero_section .hero_content .line {
+    display: none;
+  }
+  .hero_section .hero_content .arrow {
+    top: 210px;
+    left: -310px;
+  }
+}/*# sourceMappingURL=style.css.map */
