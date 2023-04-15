@@ -1,0 +1,31 @@
+@mixin paragrapg {
+    font-family: "Lexend Deca";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+  @mixin images {
+      width: 445px;
+      height: 445px;
+      border-radius: 50%;
+  }
+  @mixin button {
+    padding: 14px 39px;
+    background: #fcb72b;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    color: #ffffff;
+  }
+  @mixin navbar {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 25px;
+    color: #939caa;
+  }
+  
