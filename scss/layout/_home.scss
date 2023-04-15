@@ -21,7 +21,13 @@ body {
 header {
   margin-bottom: 160px;
 }
-
+#menu__checkbox {
+  appearance: none;
+  position: absolute;
+}
+.toggler {
+  display: none;
+}
 .header__wrapper {
   width: 100%;
   padding: 22px 0;
@@ -150,32 +156,57 @@ header {
 // End Share section
 
 // Start circle more section
-
 .circle_section {
-  margin-top: 200px;
-  height: 469px;
-  background-repeat: no-repeat;
-  background-position: right;
-  background-image: url(/images/img_circle-1.jpg);
-  .circle_content {
-    max-width: 500px;
-    h2 {
-      font-family: "Space Mono";
-      font-style: normal;
-      font-weight: 700;
-      font-size: 48px;
-      line-height: 48px;
-      letter-spacing: -2.14286px;
-      color: #495567;
-    }
-    p {
-      @include paragrapg;
-      padding: 24px 0 40px;
-    }
-  }
+  margin-top: 250px;
   .circle_flex {
+    overflow: hidden;
     display: flex;
+    margin: 140px 0;
+    align-items: center;
+    gap: 85px;
   }
+}
+.circle_img {
+  margin-left: -125px;
+  width: 747px;
+  height: 457px;
+  object-fit: contain;
+}
+.img-2 {
+  width: 445px;
+  height: 445px;
+  border-radius: 50%;
+  object-fit: contain;
+  position: relative;
+}
+
+.circle_content {
+  min-width: 445px;
+  margin: 30px 0;
+  h2 {
+    font-family: "Space Mono";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -2.14286px;
+    color: #495567;
+  }
+  p {
+    @include paragrapg;
+    padding: 24px 0 40px;
+  }
+}
+.circle_flex {
+  display: flex;
+  margin: 150px 0;
+}
+.circle_content,
+.circle-3 {
+  max-width: 500px;
+}
+.circle_img {
+  margin: 0;
 }
 
 // End circle more section
@@ -188,6 +219,7 @@ header {
   }
   .header__wrapper {
     padding: 0;
+    position: relative;
     .brand {
       .fa-bars {
         display: block;
@@ -204,6 +236,13 @@ header {
       visibility: hidden;
     }
   }
+  .toggler {
+    display: block;
+  }
+  .hero_section .btn {
+    margin-left: calc(50% - 80px);
+  }
+
   .hero_section {
     .hero_heading {
       font-size: 40px;
@@ -226,13 +265,27 @@ header {
       }
     }
   }
+  .btn {
+    margin-left: calc(50% - 80px);
+  }
   .share_card {
     text-align: center;
   }
   .share_flex {
     flex-direction: column;
   }
+  .circle_section .circle_flex {
+    margin: 0;
+  }
+  .circle-3 {
+    margin: 0;
+  }
+  .img-2 {
+    width: 311px;
+    height: 311px;
+  }
 }
+
 // End responsive Mobile styles
 // Start responsive tablet styles
 
@@ -277,6 +330,21 @@ header {
     align-items: inherit;
     p {
       min-width: 400px;
+    }
+  }
+  .circle_section {
+    .circle_flex {
+      text-align: center;
+    }
+    .circle-2 {
+      flex-direction: column;
+      text-align: center;
+      min-width: 800px;
+    }
+    .circle-3 {
+      text-align: center;
+      flex-direction: column-reverse;
+      min-width: 800px;
     }
   }
 }
