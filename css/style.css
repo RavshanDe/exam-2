@@ -12,6 +12,8 @@ header {
   position: relative;
   top: 100px;
   background-image: url(/images/about_image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .about h2 {
   padding: 72px 0;
@@ -72,11 +74,17 @@ header {
   gap: 200px;
   justify-content: space-around;
 }
+.faqs_flex .left_card {
+  width: 100%;
+}
+.faqs_flex .left_card h2 {
+  padding: 80px 0;
+}
 .faqs_flex .right_cards {
   background: #fff;
 }
 .faqs_flex .right_cards #accodion {
-  margin: 100px auto;
+  margin: 64px auto;
   min-width: 730px;
 }
 .faqs_flex .right_cards #accodion li {
@@ -95,15 +103,30 @@ header {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  text-align: left;
   color: #495567;
-}
-.faqs_flex .right_cards #accodion li label + input [type=radio] {
-  display: none;
 }
 .faqs_flex .right_cards #accodion li label span {
   transform: rotate(90deg);
   font-size: 22px;
-  color: #FCB72B;
+  color: #fcb72b;
+}
+.faqs_flex .right_cards .content {
+  padding: 0 10px;
+  overflow: hidden;
+  transition: max-height 0.7s ease;
+  max-height: 0;
+  line-height: 26px;
+}
+.faqs_flex .right_cards .content p {
+  color: #495567;
+  text-align: left;
+}
+.faqs_flex .right_cards label + input[type=radio] {
+  display: none;
+}
+.faqs_flex .right_cards label + input[type=radio]:checked + .content {
+  max-height: 400px;
 }
 
 .faqs_title {
@@ -115,7 +138,14 @@ header {
     top: 0;
     text-align: center;
   }
-  .circle_content, .circle-3 {
+  .about h2 {
+    padding: 0;
+    font-size: 37px;
+    left: -75px;
+    position: relative;
+  }
+  .circle_content,
+  .circle-3 {
     max-width: none !important;
   }
   .values h2 {
@@ -124,16 +154,48 @@ header {
   .values_cards {
     flex-direction: column;
   }
+  .faqs_flex {
+    flex-direction: column;
+    gap: 0;
+    text-align: center;
+  }
+  .faqs_flex .left_card .how {
+    padding-top: 25px;
+  }
+  .faqs_flex .left_card h2 {
+    padding: 0;
+  }
+  .faqs_flex .right_cards #accodion {
+    min-width: 0;
+  }
+  .content p {
+    color: #495567;
+    text-align: left;
+  }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .about h2 {
-    padding: 72px;
+    padding: 20px 76px;
   }
   .values_cards {
     flex-direction: column;
   }
   .values_cards .values_card {
     padding: 0 160px;
+  }
+  .faqs_flex {
+    gap: 0;
+    text-align: center;
+    flex-direction: column;
+  }
+  .faqs_flex .left_card {
+    padding: 0;
+  }
+  .faqs_flex .left_card .how {
+    padding-top: 55px;
+  }
+  .faqs_flex .left_card h2 {
+    padding: 0;
   }
 }
 *,

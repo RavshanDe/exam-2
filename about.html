@@ -28,7 +28,9 @@
               <a href="index.html"
                 ><img src="./images/scoot.svg" alt="Scoot image" class="logo"
               /></a>
-              <li class="list_items"><a href="#" class="active">About</a></li>
+              <li class="list_items">
+                <a href="./about.html" class="active">About</a>
+              </li>
               <li class="list_items"><a href="#">Location</a></li>
               <li class="list_items"><a href="#">Careers</a></li>
             </ul>
@@ -38,7 +40,9 @@
       </div>
     </header>
     <div class="about">
-      <h2>About</h2>
+      <div class="container">
+        <h2>About</h2>
+      </div>
     </div>
     <section class="circle_section">
       <div class="container">
@@ -116,7 +120,7 @@
         <h2 class="faqs_title">FAQs</h2>
         <div class="faqs_flex">
           <div class="left_card">
-            <h2>How It Works?</h2>
+            <h2 class="how">How It Works?</h2>
           </div>
           <div class="right_cards">
             <ul id="accodion">
@@ -136,7 +140,7 @@
               </li>
               <li>
                 <label for="second"
-                  >What is Acoordon? <span>&#x3e;</span></label
+                  >Can I find a nearby Scoots?<span>&#x3e;</span></label
                 >
                 <input type="radio" name="accordion" id="second" />
                 <div class="content">
@@ -149,8 +153,61 @@
                 </div>
               </li>
               <li>
-                <label for="third">What is Acoordon? <span>&#x3e;</span></label>
+                <label for="third"
+                  >Do I need a license to ride?<span>&#x3e;</span></label
+                >
                 <input type="radio" name="accordion" id="third" />
+                <div class="content">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do it
+                    would be to click the relevant link at the bottom of this
+                    page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="faqs_flex">
+          <div class="left_card">
+            <h2>Safe driving</h2>
+          </div>
+          <div class="right_cards">
+            <ul id="accodion">
+              <li>
+                <label for="four"
+                  >Should I wear a helmet?<span>&#x3e;</span></label
+                >
+                <input type="radio" name="accordion" id="four" checked />
+                <div class="content">
+                  <p>
+                    Yes, please do! All cities have different laws. But we
+                    strongly strongly strongly recommend always wearing a helmet
+                    regardless of the local laws. We like you and we want you to
+                    be as safe as possible while Scooting.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="five"
+                  >How about the rules & regulations?<span>&#x3e;</span></label
+                >
+                <input type="radio" name="accordion" id="five" />
+                <div class="content">
+                  <p>
+                    To download the Scoot app, you can search “Scoot” in both
+                    the App and Google Play stores. An even simpler way to do it
+                    would be to click the relevant link at the bottom of this
+                    page and you’ll be re-directed to the correct page.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <label for="six"
+                  >What if I damage my Scoot?<span>&#x3e;</span></label
+                >
+                <input type="radio" name="accordion" id="six" />
                 <div class="content">
                   <p>
                     To download the Scoot app, you can search “Scoot” in both
@@ -165,5 +222,49 @@
         </div>
       </div>
     </div>
+    <section class="mask">
+      <div class="container mask_flex">
+        <div>
+          <h2>Sign up and Scoot off today</h2>
+        </div>
+        <div class="store">
+          <a target="_blank" href="https://store.apple.com"
+            ><img src="./images/app_store.png" alt="" style="margin: 0 10px"
+          /></a>
+          <a target="_blank" href="https://play.google.com"
+            ><img src="./images/google_play.png" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <div class="footer_flex">
+          <div class="footer_content">
+            <ul>
+              <li class="light_scott list-item">
+                <a href="index.html"
+                  ><img src="./images/scoot_light.svg" alt=""
+                /></a>
+              </li>
+              <li class="list-item"><a href="about.html">About</a></li>
+              <li class="list-item"><a href="#">Location</a></li>
+              <li class="list-item"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="social">
+            <a href="https://facebook.com" target="_blank"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+            <a href="https://twitter.com" target="_blank"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+            <a href="https://instagram.com" target="_blank"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
