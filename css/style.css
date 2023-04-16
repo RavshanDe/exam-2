@@ -1,4 +1,141 @@
 @import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Space+Mono:wght@700&display=swap");
+body {
+  height: 1000px;
+}
+
+header {
+  margin: 0 !important;
+}
+
+.about {
+  position: relative;
+  top: 100px;
+  background-image: url(/images/about_image.png);
+}
+.about h2 {
+  padding: 72px 0;
+  max-width: 1100px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 50px;
+  font-family: "Space Mono", sans-serif;
+  font-weight: 700;
+}
+
+.values h2 {
+  text-align: center;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.values_cards {
+  display: flex;
+  text-align: center;
+  gap: 30px;
+  justify-content: center;
+}
+.values_cards .values_card h3 {
+  padding: 32px 0;
+  font-family: "Space Mono";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+.values_cards .values_card p {
+  font-family: "Lexend Deca";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #939caa;
+}
+
+.faqs {
+  margin: 120px 0;
+}
+
+.faqs_flex {
+  display: flex;
+  align-items: stretch;
+  gap: 200px;
+  justify-content: space-around;
+}
+.faqs_flex .right_cards {
+  background: #fff;
+}
+.faqs_flex .right_cards #accodion {
+  margin: 100px auto;
+  min-width: 730px;
+}
+.faqs_flex .right_cards #accodion li {
+  list-style-type: none;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: #f2f5f9;
+  padding: 10px;
+  border-radius: 4px;
+}
+.faqs_flex .right_cards #accodion li label {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #495567;
+}
+.faqs_flex .right_cards #accodion li label + input [type=radio] {
+  display: none;
+}
+.faqs_flex .right_cards #accodion li label span {
+  transform: rotate(90deg);
+  font-size: 22px;
+  color: #FCB72B;
+}
+
+.faqs_title {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .about {
+    top: 0;
+    text-align: center;
+  }
+  .circle_content, .circle-3 {
+    max-width: none !important;
+  }
+  .values h2 {
+    margin: 20px 0;
+  }
+  .values_cards {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .about h2 {
+    padding: 72px;
+  }
+  .values_cards {
+    flex-direction: column;
+  }
+  .values_cards .values_card {
+    padding: 0 160px;
+  }
+}
 *,
 *::after,
 *::before {
@@ -66,7 +203,11 @@ header {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
+  transition: all 0.3s ease;
   text-decoration: none;
+}
+.header__wrapper .brand ul li a.active, .header__wrapper .brand ul li a:hover {
+  color: #777;
 }
 
 .btn {
@@ -137,6 +278,9 @@ header {
 .share_flex {
   display: flex;
   gap: 30px;
+}
+.share_flex .share_card {
+  margin-top: 120px;
 }
 .share_flex .share_card h3 {
   font-family: "Space Mono";
@@ -270,6 +414,7 @@ footer {
   margin-right: 58px;
 }
 .footer_flex ul a {
+  transition: all 0.3s ease;
   text-decoration: none;
   font-family: "Space Mono";
   font-style: normal;
@@ -278,12 +423,20 @@ footer {
   line-height: 25px;
   color: #939caa;
 }
+.footer_flex ul a:hover {
+  color: #ffd;
+}
 .footer_flex .social {
   font-size: 24px;
 }
 .footer_flex .social .fa-brands {
   margin: 0 12px;
   color: #FCB72B;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer_flex .social .fa-brands:hover {
+  color: #ddd;
 }
 
 @media (max-width: 767px) {
@@ -352,6 +505,9 @@ footer {
   }
   .circle_section .circle_flex .circle_content {
     padding: 24px 50px 40px;
+  }
+  .circle_section .circle_flex .circle_content h2 {
+    font-size: 32px;
   }
   .circle_section .circle-3 {
     margin: 0;

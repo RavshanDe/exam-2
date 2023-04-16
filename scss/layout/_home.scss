@@ -59,7 +59,11 @@ header {
       li {
         a {
           @include paragrapg;
+          transition: all .3s ease;
           text-decoration: none;
+          &.active, &:hover {
+            color: #777;
+          }
         }
       }
     }
@@ -130,6 +134,7 @@ header {
   display: flex;
   gap: 30px;
   .share_card {
+    margin-top: 120px;
     h3 {
       font-family: "Space Mono";
       font-style: normal;
@@ -255,6 +260,7 @@ footer {
       margin-right: 58px;
     }
      a {
+      transition: all .3s ease;
       text-decoration: none;
       font-family: "Space Mono";
       font-style: normal;
@@ -262,6 +268,9 @@ footer {
       font-size: 15px;
       line-height: 25px;
       color: #939caa;
+      &:hover {
+        color: #ffd;
+      }
     }
   }
   .social {
@@ -269,6 +278,11 @@ footer {
   .fa-brands {
     margin: 0 12px;
     color: #FCB72B;
+    cursor: pointer;
+    transition: all .3s ease;
+    &:hover {
+      color: #ddd;
+    }
   }
   } 
 }
@@ -347,6 +361,9 @@ footer {
       padding: 20px 0;
       .circle_content {
         padding: 24px 50px 40px;
+        h2 {
+          font-size: 32px;
+        }
       }
     }
     .circle-3 {
