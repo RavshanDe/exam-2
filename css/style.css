@@ -71,7 +71,6 @@ header {
 .faqs_flex {
   display: flex;
   align-items: stretch;
-  gap: 200px;
   justify-content: space-around;
 }
 .faqs_flex .left_card {
@@ -79,6 +78,7 @@ header {
 }
 .faqs_flex .left_card h2 {
   padding: 80px 0;
+  font-size: 45px;
 }
 .faqs_flex .right_cards {
   background: #fff;
@@ -103,6 +103,7 @@ header {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
+  font-size: 22px;
   text-align: left;
   color: #495567;
 }
@@ -131,18 +132,21 @@ header {
 
 .faqs_title {
   text-align: center;
+  font-size: 40px;
+}
+
+.about_img {
+  background-image: url(/images/ab.png);
+  display: block;
+  min-width: 100%;
+  height: 200px;
+  position: relative;
+  top: 100px;
 }
 
 @media (max-width: 767px) {
-  .about {
+  .about_img {
     top: 0;
-    text-align: center;
-  }
-  .about h2 {
-    padding: 0;
-    font-size: 37px;
-    left: -75px;
-    position: relative;
   }
   .circle_content,
   .circle-3 {
@@ -171,6 +175,11 @@ header {
   .content p {
     color: #495567;
     text-align: left;
+  }
+}
+@media (min-width: 750px) and (max-width: 826px) {
+  .about h2 {
+    padding: 20px;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -417,6 +426,7 @@ header {
   font-size: 15px;
   line-height: 25px;
   color: #939caa;
+  font-size: 18px;
   padding: 24px 0 40px;
 }
 

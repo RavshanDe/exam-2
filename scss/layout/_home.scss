@@ -200,6 +200,7 @@ header {
   }
   p {
     @include paragrapg;
+    font-size: 18px;
     padding: 24px 0 40px;
   }
 }
